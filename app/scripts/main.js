@@ -1,1 +1,6 @@
-console.log('\'Allo \'Allo!'); // eslint-disable-line no-console
+var app = angular.module('GDG-app', []);
+    app.controller('mainController', function($scope) {
+
+        // create a message to display in our view
+        $scope.message = 'Everyone come and see how good I look!';
+    });

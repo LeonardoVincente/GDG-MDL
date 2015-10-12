@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="">
+<html lang="" ng-app="GDG-app">
   <head>
     <meta charset="utf-8">
-    <title>GDG MDL</title>
+    <title>GDG Tijuana</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,13 +19,12 @@
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
-  <body>
+  <body ng-controller="mainController">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-       <a name="top"></a>
        <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
         <div class="mdl-layout__header-row">
           
@@ -39,13 +38,13 @@
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.html">Home</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="eventos.html">Eventos</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="comunidad.html">Comunidad</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="nosotros.html">Nosotros</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="patrocinios.html">Patrocinios</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="contactanos.html">Contactanos</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="codigo.html">Codigo de Conducta</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#home.html">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#eventos.html">Eventos</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="#comunidad.html">Comunidad</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Nosotros</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Patrocinios</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contactanos</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Codigo de Conducta</a>
             </nav>
           </div>
         </div>
@@ -65,8 +64,17 @@
           <a class="mdl-navigation__link" href="">Codigo de Conducta</a>
         </nav>
       </div>
-      
+
       <div class="android-content mdl-layout__content">
+        <a name="top"></a>
+  <div id="main">
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+   {{2+1}}
+    <div ng-view=""></div>
+    
+  </div>
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
             <div class="mdl-mega-footer--left-section">
@@ -97,6 +105,8 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/material-design-lite/material.min.js"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.min.js">
     <!-- endbower -->
     <!-- endbuild -->
 
