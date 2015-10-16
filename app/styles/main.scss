@@ -69,6 +69,18 @@ body {
     background-color: transparent !important;
     border-bottom: 4px solid transparent;
 }
+.social-btn__twitter{
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_white_24dp.png');
+    background-size: contain;
+}
+
+.social-btn__gplus {
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_white_24dp.png');
+}
+
+.social-b:hover path{
+    fill:red!important;;
+}
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
@@ -113,4 +125,19 @@ body {
 .post-content-codigo{
     text-align: justify;
     text-justify: inter-word;
+}
+
+
+/* eventos */
+
+.demo-card-wide.mdl-card {
+  width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../images/background2.jpg') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
 }
